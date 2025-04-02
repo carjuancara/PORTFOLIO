@@ -1,6 +1,11 @@
 {
     "version": 2,
-    "buildCommand": "uv venv .venv && source .venv/bin/activate && uv pip install . && python manage.py runserver",
+    "builds": [
+        {
+            "src": "manage.py",
+            "use": "@vercel/python"
+        }
+    ],
     "routes": [
         {
             "src": "/(.*)",

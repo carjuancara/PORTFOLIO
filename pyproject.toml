@@ -3,12 +3,13 @@ name = "portfolio"
 version = "0.1.0"
 description = "Mi portafolio en Django"
 readme = "README.md"
-requires-python = ">=3.10"  # 🔹 3.12 puede no estar disponible en Vercel
+requires-python = ">=3.10"
+
 dependencies = [
     "django>=5.1.7",
-    "django-decouple>=2.1",
-    "gunicorn>=21.2.0",  # 🔹 Para correr en producción
-    "whitenoise>=6.9.0",  # 🔹 Para servir archivos estáticos
+    "gunicorn>=21.2.0",    # Servidor WSGI en producción
+    "whitenoise>=6.9.0",   # Para servir archivos estáticos
+    "django-decouple>=2.1", # Para manejar variables de entorno
 ]
 
 [build-system]
