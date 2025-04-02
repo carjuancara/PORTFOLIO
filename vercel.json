@@ -1,15 +1,11 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "start.sh",
-            "use": "@vercel/static"
-        }
-    ],
+    "buildCommand": "pip install -r requirements.txt",
+    "startCommand": "gunicorn portfolio.wsgi --bind 0.0.0.0:8000",
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/start.sh"
+            "dest": "/"
         }
     ]
 }
