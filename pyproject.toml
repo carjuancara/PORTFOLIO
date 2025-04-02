@@ -8,6 +8,7 @@ dependencies = [
     "daphne>=4.1.2",
     "django>=5.1.7",
     "django-decouple>=2.1",
+    "uv>=0.6.11",
     "vercel>=0.2.1",
     "whitenoise>=6.9.0",
 ]
