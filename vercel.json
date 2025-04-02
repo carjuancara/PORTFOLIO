@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
+    "buildCommand": "uv venv .venv && source .venv/bin/activate && uv pip install . && python manage.py runserver",
     "routes": [
         {
             "src": "/(.*)",

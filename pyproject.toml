@@ -11,3 +11,6 @@ dependencies = [
     "vercel>=0.2.1",
     "whitenoise>=6.9.0",
 ]
+[tool.uv.dependencies]
+django = "*"
+gunicorn = "*"
