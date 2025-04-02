@@ -1,17 +1,16 @@
 [project]
 name = "portfolio"
 version = "0.1.0"
-description = "Add your description here"
+description = "Mi portafolio en Django"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"  # 🔹 3.12 puede no estar disponible en Vercel
 dependencies = [
-    "daphne>=4.1.2",
     "django>=5.1.7",
     "django-decouple>=2.1",
-    "uv>=0.6.11",
-    "vercel>=0.2.1",
-    "whitenoise>=6.9.0",
+    "gunicorn>=21.2.0",  # 🔹 Para correr en producción
+    "whitenoise>=6.9.0",  # 🔹 Para servir archivos estáticos
 ]
-[tool.uv.dependencies]
-django = "*"
-gunicorn = "*"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
