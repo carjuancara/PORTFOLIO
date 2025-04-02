@@ -1,0 +1,37 @@
+{
+    "name": "Carlos J. Carabajal",
+    "email": "chanfle78@yahoo.com.ar",
+    "github": "https: //github.com/carjuancara",
+    "linkedin": "https: //linkedin.com/in/carjuancara",
+    "cv": "/static/docs/cv.pdf",
+    "profilePhoto": "/static/images/MiFoto.png",
+    "bio": "Soy desarrollador backend, especializado en crear sistemas robustos, eficientes y bien estructurados. Trabajo con tecnologías como Python, Django y manejo bases de datos como PostgreSQL. Me apasiona diseñar arquitecturas modulares, resolver desafíos complejos en bases de datos y optimizar el rendimiento de las aplicaciones para brindar soluciones escalables y de calidad.",
+    "skills": ["Python", "Django", "JavaScript", "React", "HTML/CSS", "PostgreSQL"
+    ],
+    "projects": [
+        {
+            "name": "Room reservation",
+            "description": "Una aplicación web que permite a los usuarios...",
+            "img": [
+                {"url": "/static/images/room_reservations_habitacion.png"
+                },
+                {"url": "/static/images/room_reservations_habitacion2.png"
+                }
+            ],
+            "demoUrl": "https: //github.com/carjuancara/ROOM_RESERVATIONS",
+            "repoUrl": "https: //github.com/carjuancara/ROOM_RESERVATIONS"
+        },
+        {
+            "name": "Events",
+            "description": "Sistema de gestión que ayuda a las empresas a...",
+            "img": [
+                {"url": "/static/images/events_fiesta.png"
+                },
+                {"url": "/static/images/events_anime.png"
+                }
+            ],
+            "demoUrl": "https: //github.com/carjuancara/events",
+            "repoUrl": "https: //github.com/carjuancara/events"
+        }
+    ]
+}
