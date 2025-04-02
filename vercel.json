@@ -1,15 +1,10 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "manage.py",
-            "use": "vercel-python"
-        }
-    ],
+    "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/static/$1"
+            "dest": "server.py"
         }
     ]
 }
