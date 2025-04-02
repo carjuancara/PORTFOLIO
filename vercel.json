@@ -1,10 +1,15 @@
 {
     "version": 2,
-    "buildCommand": "./start.sh",
+    "builds": [
+        {
+            "src": "start.sh",
+            "use": "@vercel/static"
+        }
+    ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server.py"
+            "dest": "/start.sh"
         }
     ]
 }
